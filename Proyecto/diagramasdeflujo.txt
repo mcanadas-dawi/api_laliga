@@ -1,0 +1,28 @@
+Diagrama de Flujo para el Registro de un Partido
+Inicio
+Verificar Equipos Participantes:
+Confirmar que ambos equipos (local y visitante) existen en la base de datos. Si alguno de ellos no está registrado, mostrar un error.
+Registrar Partido:
+Registrar la fecha y equipos (local y visitante) en la tabla partidos.
+Registrar Resultado:
+Registrar el número de goles de cada equipo (local y visitante) y actualizar el marcador final en la tabla partidos.
+Actualizar Estadísticas de Temporada:
+Para cada equipo:
+Incrementar el número de partidos jugados.
+Sumar 3 puntos por victoria, 1 por empate, 0 por derrota.
+Actualizar los goles a favor y en contra.
+Actualizar Estadísticas de Jugadores:
+Actualizar estadísticas individuales de los jugadores que participaron en el partido (goles, asistencias, tarjetas, minutos jugados).
+Recalcular Clasificación:
+Ordenar los equipos en la clasificación con base en puntos, diferencia de goles y otros criterios de desempate según las reglas de la liga.
+Fin
+
+
+Control de Estadísticas de Jugadores
+Cada jugador tendrá estadísticas individuales, que se actualizan al finalizar cada partido:
+
+Goles Anotados: Incrementar el contador de goles de los jugadores que hayan marcado durante el partido.
+Asistencias: Sumar a las asistencias para aquellos jugadores que hayan generado jugadas de gol.
+Tarjetas: Actualizar las tarjetas amarillas y rojas acumuladas por cada jugador.
+Minutos Jugados: Sumar los minutos jugados por cada jugador en el partido.
+Sanciones y Suspensiones: Si un jugador acumula un cierto número de tarjetas, se puede registrar su suspensión en la tabla de jugadores, que puede ser verificada antes de cada partido.
