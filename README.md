@@ -4,10 +4,10 @@
 
 ### /equipos
 
-**GET** - TODOS LOS EQUIPOS:
+**GET** - MOSTRAR TODOS LOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
 
-**POST** - INSERTAR EQUIPOS:
+**POST** - INSERTAR NUEVOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
 - **JSON**:
     ```json
@@ -26,13 +26,13 @@
 
 ### /jugadores
 
-**GET** - TODOS LOS JUGADORES:
+**GET** - MOSTRAR TODOS LOS JUGADORES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores
 
-**GET** - DETALLES DE UN JUGADOR:
+**GET** - MOSTRAR DETALLES DE UN JUGADOR:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?id=2
 
-**GET** - JUGADORES DE UN EQUIPO:
+**GET** - MOSTRAR JUGADORES DE UN EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?equipo_id=2
 
 **POST** - INSERTAR JUGADORES:
@@ -69,10 +69,10 @@
 
 ### /partidos
 
-**GET** - TODOS LOS PARTIDOS:
+**GET** - MOSTRAR TODOS LOS PARTIDOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos
 
-**GET** - PARTIDO ESPECÍFICO:
+**GET** - MOSTRAR UN PARTIDO ESPECÍFICO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos?id=5
 
 **POST** - INSERTAR PARTIDOS:
@@ -93,22 +93,22 @@
 
 ### /clasificacion
 
-**GET** - CLASIFICACIÓN:
+**GET** - MOSTRAR CLASIFICACIÓN:
 - **URL**: http://localhost/Proyecto/api_laliga.php/clasificacion
 
 ### /pichichi
 
-**GET** - PICHICHI (máximo goleador):
+**GET** - MOSTRAR TOP 10 GOLEADORES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/pichichi
 
 ### /maxasistente
 
-**GET** - MAX ASISTENTE (máximo asistente):
+**GET** - MOSTRAR TOP 10 ASISTENTES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/maxasistente
 
 ### /estadio
 
-**PUT** - CAMBIAR ESTADIO y CAPACIDAD EQUIPO:
+**PUT** - CAMBIAR ESTADIO y CAPACIDAD DE UN EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/estadio
 - **JSON**:
     ```json
@@ -120,7 +120,7 @@
 
 ### /entrenador
 
-**PUT** - CAMBIAR ENTRENADOR EQUIPO:
+**PUT** - CAMBIAR ENTRENADOR DE UN EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/entrenador
 - **JSON**:
     ```json
