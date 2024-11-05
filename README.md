@@ -1,6 +1,74 @@
 # DOCUMENTACION api_laliga
 
-## 1. DEFINICION DE ENDPOINTS
+## 1. ENUNCIADO
+Proyecto: Desarrollo de una API para la Gestión de "La Liga"
+
+Objetivo:
+Desarrollar una API en PHP para gestionar las operaciones principales de "La Liga", permitiendo la administración de equipos, jugadores, partidos y 
+estadísticas de temporada. La API debe satisfacer las necesidades operacionales, tales como mantener información detallada sobre los equipos y jugadores, 
+gestionar el calendario de partidos y brindar acceso a estadísticas de rendimiento y clasificación.
+
+Requisitos Funcionales:
+
+### 1. Definición de Endpoints:
+- La API debe soportar operaciones CRUD (Crear, Leer, Actualizar y Borrar) para equipos, jugadores, partidos y estadísticas.
+- Los endpoints deben estar asociados a métodos HTTP (GET, POST, PUT, DELETE) y contar con ejemplos en JSON tanto de las solicitudes como de las respuestas.
+
+
+### 2. Base de Datos:
+- Diseñar un esquema relacional con tablas para equipos, jugadores, partidos y estadísticas de temporada.
+- Establecer relaciones entre las tablas, como la asociación de jugadores a equipos y de partidos a equipos.
+
+### 3. Lógica de Negocio:
+- Implementar la lógica para gestionar partidos y actualizar estadísticas mediante diagramas de flujo.
+- Describir el flujo para el registro de un partido, desde la verificación de los equipos participantes hasta la actualización de estadísticas y posiciones en la tabla.
+- Describir el control de estadísticas de jugadores (goles, tarjetas, asistencias) y los criterios de clasificación de la liga.
+
+### 4. Seguridad:
+- Implementar autenticación y autorización para garantizar el acceso seguro a los endpoints.
+- Realizar un análisis previo sobre el enfoque de seguridad más adecuado.
+
+### Implementación de Endpoints:
+
+#### 1. Obtener el listado de:
+- Todos los equipos
+- Todos los jugadores 
+- Detalles de un jugador
+- Jugadores de un equipo
+- Todos los partidos
+- Partido específico
+- Clasificación
+- Top 10 goleadores
+- Top 10 asistentes
+  
+ #### 2. Registrar:
+- Partidos
+- Equipos
+- Jugadores
+
+#### 3. Actualizar la información sobre:
+- Posicion del jugador
+- Estadio y su capacidad de un equipo
+- Entrenador de equipo
+
+#### 4. Borrar:
+- Equipo
+- Jugador
+- Partido
+
+### Documentación:
+
+1. Referencia de Endpoints:
+    - Detalle completo de cada endpoint disponible en la API, incluyendo el método HTTP, URL, parámetros de entrada y ejemplos de respuestas.
+
+2. Ejemplos en formato JSON:
+    - Muestras de cómo realizar solicitudes y respuestas esperadas.
+
+3. Casos de Uso:
+    - Ejemplos prácticos sobre cómo usar la API en escenarios como la creación de un nuevo partido, consulta de estadísticas de jugadores o actualización de 
+    información de equipos.
+
+## 2. DEFINICION DE ENDPOINTS
 
 ### /equipos
 
@@ -229,11 +297,11 @@
      }
      ```
 
-## 2. BASE DE DATOS
+## 3. BASE DE DATOS
 ## MODEO RELACIONAL
 ![Esquema relacional](Proyecto/Imagenes/basededatos.png)
 
-## 3. LÓGICA DE NEGOCIO
+## 4. LÓGICA DE NEGOCIO
 ### CREAR NUEVO PARTIDO
 ![NuevoPartido](Proyecto/Imagenes/nuevopartido.png)
 
