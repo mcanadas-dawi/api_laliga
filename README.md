@@ -58,15 +58,15 @@ Requisitos Funcionales:
 
 ### Documentación:
 
-1. Referencia de Endpoints:
-    - Detalle completo de cada endpoint disponible en la API, incluyendo el método HTTP, URL, parámetros de entrada y ejemplos de respuestas.
+#### 1. Referencia de Endpoints:
+- Detalle completo de cada endpoint disponible en la API, incluyendo el método HTTP, URL, parámetros de entrada y ejemplos de respuestas.
 
-2. Ejemplos en formato JSON:
-    - Muestras de cómo realizar solicitudes y respuestas esperadas.
+#### 2. Ejemplos en formato JSON:
+- Muestras de cómo realizar solicitudes y respuestas esperadas.
 
-3. Casos de Uso:
-    - Ejemplos prácticos sobre cómo usar la API en escenarios como la creación de un nuevo partido, consulta de estadísticas de jugadores o actualización de 
-    información de equipos.
+#### 3. Casos de Uso:
+- Ejemplos prácticos sobre cómo usar la API en escenarios como la creación de un nuevo partido, consulta de estadísticas de jugadores o actualización de 
+  información de equipos.
 
 ## 2. DEFINICION DE ENDPOINTS
 
