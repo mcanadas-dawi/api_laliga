@@ -74,8 +74,8 @@ Requisitos Funcionales:
 
 **GET** - MOSTRAR TODOS LOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
-- **RESPUESTA**:
-  ![RespuestaGet1](Proyecto/Imagenes/basededatos.png)
+- **RESPUESTA**:  
+  ![RespuestaGet1](RespuestasGet/RespuestaGet1.png)
 
 **POST** - INSERTAR NUEVOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
@@ -91,26 +91,41 @@ Requisitos Funcionales:
     }
     ```
 - **RESPUESTA**:
-  ![RespuestaPost1](Proyecto/Imagenes/basededatos.png)
-    
-    
-
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Equipo registrado con éxito"
+  }
+  ```   
 **DELETE** - BORRAR EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos?equipo_id=22
 - **RESPUESTA**:
-  ![RespuestaDelete1](Proyecto/Imagenes/basededatos.png)
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Equipo eliminado con éxito"
+  }
+  ```  
 
 
 ### /jugadores
 
 **GET** - MOSTRAR TODOS LOS JUGADORES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores
+- **RESPUESTA**:  
+![RespuestaGet2](RespuestasGet/RespuestaGet2.png)
 
 **GET** - MOSTRAR DETALLES DE UN JUGADOR:
-- **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?id=2
+- **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?id=11
+- **RESPUESTA**:  
+ ![RespuestaGet3](RespuestasGet/RespuestaGet3.png)
 
 **GET** - MOSTRAR JUGADORES DE UN EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?equipo_id=2
+- **RESPUESTA**:  
+  ![RespuestaGet4](RespuestasGet/RespuestaGet4.png)
 
 **POST** - INSERTAR JUGADORES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores
@@ -129,6 +144,14 @@ Requisitos Funcionales:
         "minutos_jugados": 0
     }
     ```
+ - **RESPUESTA**:  
+ ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Jugador registrado con éxito"
+  }
+  ```    
 
 **PUT** - CAMBIAR POSICIÓN JUGADOR:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores
@@ -140,17 +163,37 @@ Requisitos Funcionales:
     }
     ```
     *_La posicion es un ENUM: Portero, Defensa, Centrocampista, Delantero_*
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Posicion del jugador actualizada con éxito"
+  }
+  ```  
 
 **DELETE** - BORRAR JUGADOR:
 - **URL**: http://localhost/Proyecto/api_laliga.php/jugadores?id=401
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Jugador eliminado con éxito"
+  }
+  ```  
 
 ### /partidos
 
 **GET** - MOSTRAR TODOS LOS PARTIDOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos
+- **RESPUESTA**:  
+  ![RespuestaGet5](RespuestasGet/RespuestaGet5.png)
 
 **GET** - MOSTRAR UN PARTIDO ESPECÍFICO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos?id=5
+- **RESPUESTA**:  
+  ![RespuestaGet6](RespuestasGet/RespuestaGet6.png)
 
 **POST** - INSERTAR PARTIDOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos
@@ -164,24 +207,46 @@ Requisitos Funcionales:
         "fecha": "2024-05-15"
     }
     ```
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Partido registrado con éxito"
+  }
+  ```  
 
 **DELETE** - BORRAR PARTIDO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/partidos?id=6
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Partido y estadísticas eliminados con éxito"
+  }
+  ```  
 
 ### /clasificacion
 
 **GET** - MOSTRAR CLASIFICACIÓN:
 - **URL**: http://localhost/Proyecto/api_laliga.php/clasificacion
+- **RESPUESTA**:   
+![RespuestaGet7](RespuestasGet/RespuestaGet7.png)
 
 ### /pichichi
 
 **GET** - MOSTRAR TOP 10 GOLEADORES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/pichichi
+- **RESPUESTA**:  
+![RespuestaGet8](RespuestasGet/RespuestaGet8.png)
 
 ### /maxasistente
 
 **GET** - MOSTRAR TOP 10 ASISTENTES:
 - **URL**: http://localhost/Proyecto/api_laliga.php/maxasistente
+- **RESPUESTA**:  
+  ![RespuestaGet9](RespuestasGet/RespuestaGet9.png)
 
 ### /estadio
 
@@ -194,6 +259,14 @@ Requisitos Funcionales:
         "capacidad": 81044
     }
     ```
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Estadio y capacidad actualizado con éxito"
+  }
+  ```  
 
 ### /entrenador
 
@@ -206,6 +279,14 @@ Requisitos Funcionales:
         "entrenador": "Santiago Solari"
     }
     ```
+- **RESPUESTA**:
+  ```json
+  {
+    "message": "Código correcto, la petición se ejecuta."
+  }{
+    "message": "Entrenador actualizado con éxito"
+  }
+  ```  
 
 ## COMO USAR LA API?
 
@@ -319,6 +400,18 @@ Requisitos Funcionales:
 
 ## 4. SEGURIDAD
 
-Los usuarios sin token solo podrán ejecutar las peticiones GET. El administrador de la base de datos será el único conocedor del token necesario para realizar las demás peticiones.
+#### 1. Autenticación con parámetros usuario y password:
 
-[ArchivoSeguridad](Proyecto/seguridad.php)
+- La API verifica que las solicitudes GET contengan los parámetros usuario y password en la URL.
+- Si los valores de estos parámetros coinciden con los valores predefinidos (usuario=Marc y password=marc), la API genera un token de autenticación.
+- Si los parámetros son incorrectos, la API responde con un mensaje de error indicando que las credenciales son incorrectas.  
+  
+#### 2. Generación de Token:
+
+- El token se genera de forma aleatoria mediante una función que utiliza random_bytes(), garantizando que sea difícil de predecir.
+- Este token se envía como respuesta a la solicitud, lo que permite al cliente realizar solicitudes autenticadas en el futuro.
+
+#### 3. Protección básica por URL:
+
+- La seguridad de tu API depende de que el cliente proporcione correctamente los parámetros usuario y password en la URL para recibir un token válido.
+- Sin estos parámetros, la API no genera el token ni permite el acceso a los recursos.
