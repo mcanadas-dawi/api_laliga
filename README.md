@@ -74,6 +74,8 @@ Requisitos Funcionales:
 
 **GET** - MOSTRAR TODOS LOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
+- **RESPUESTA**:
+  ![RespuestaGet1](Proyecto/Imagenes/basededatos.png)
 
 **POST** - INSERTAR NUEVOS EQUIPOS:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos
@@ -88,9 +90,16 @@ Requisitos Funcionales:
         "fundacion": 2024
     }
     ```
+- **RESPUESTA**:
+  ![RespuestaPost1](Proyecto/Imagenes/basededatos.png)
+    
+    
 
 **DELETE** - BORRAR EQUIPO:
 - **URL**: http://localhost/Proyecto/api_laliga.php/equipos?equipo_id=22
+- **RESPUESTA**:
+  ![RespuestaDelete1](Proyecto/Imagenes/basededatos.png)
+
 
 ### /jugadores
 
